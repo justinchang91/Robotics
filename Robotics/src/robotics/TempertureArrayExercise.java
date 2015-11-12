@@ -30,6 +30,9 @@ public class TempertureArrayExercise {
         int sum = 0;
         int average;
 
+        System.out.println("Please list 10 temperatures below. ");
+        
+        
         for (int i = 0; i < aryNums.length; i++) {
             Scanner userInput = new Scanner(System.in);
             aryNums[i] = userInput.nextInt();

@@ -18,7 +18,7 @@ public class SwitchStatementAndStringTaskVowelCounter {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
-       System.out.println("Write a word, and I will print it");
+       System.out.println("Write a word, and I will print it ");
        //This asks the user for a word
        
        int vowels = 0;
@@ -47,7 +47,7 @@ public class SwitchStatementAndStringTaskVowelCounter {
           }
        }
        
-       System.out.println("Number of vowels" + vowels);
+       System.out.println("Number of vowels " + vowels);
        
                
                  
