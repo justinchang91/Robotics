@@ -18,23 +18,28 @@ public class FindYourAverage {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int numberMarks = 0;
         Scanner userInput = new Scanner(System.in);
 
-        int average;
-        int sum = 0;
-        int marks = userInput.nextInt();
-        int[] array = new int[marks];
-
         System.out.print("Welcome to FindYourAverage, ");
-        System.out.print(" please state the amount of marks you have below. ");
+        System.out.print("How many marks?");
+        numberMarks = userInput.nextInt();
 
-   
-    
-    
-    
-    
-    
-    
+        int[] arrayMarks = new int[numberMarks];
+        int sum = 0;
+
+        System.out.println("Input marks: ");
+        for (int i = 0; i < numberMarks; i++) {
+
+            arrayMarks[i] = userInput.nextInt();
+            sum = sum + arrayMarks[i];
+
+        }
+
+        int average = sum / numberMarks;
+
+        System.out.print("This is your average: " + average);
+        System.out.print(" %  ");
     }
 
 }
