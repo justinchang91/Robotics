@@ -31,12 +31,11 @@ public class RockPaperScissors {
         int losses = 0;
         int ties = 0;
 
-        
         playagain = true;
         do {
-           System.out.println("Please select Rock, Paper or Scissors");
-           gamesplayed = gamesplayed + 1;
-           
+            System.out.println("Please select Rock, Paper or Scissors");
+            gamesplayed = gamesplayed + 1;
+
             do {
                 valid = true;
                 RPS = input.nextLine().trim().toLowerCase();
@@ -53,84 +52,73 @@ public class RockPaperScissors {
                     default:
                         valid = false;
                 }
+
+                if (valid == false) {
+                    System.out.println("Choice not valid. Please choose rock, paper or scissors");
+                }
             } while (valid == false);
 
             compchoice = (int) (Math.random() * 3);
 
             if (compchoice == 0) {
+                System.out.println("The computer chose rock!");
                 if (choice == 1) {
-                    System.out.println("The computer chose rock!");
                     System.out.println("Paper beats rock. You win!");
                     wins = wins + 1;
                 }
-
-                if (choice == 2) {
-                    System.out.println("The computer chose rock!");
+                else if (choice == 2) {
                     System.out.println("Rock beats scissors. You lose!");
                     losses = losses + 1;
-                }
-
-                if (choice == 0) {
-                    System.out.println("The computer chose rock!");
+                } else {
                     System.out.println("This is a tie!");
                     ties = ties + 1;
                 }
             }
 
-            if (compchoice == 1) {
+            else if (compchoice == 1) {
+                System.out.println("The computer chose paper!");
                 if (choice == 1) {
-                    System.out.println("The computer chose paper!");
                     System.out.println("This is a tie!");
                     ties = ties + 1;
                 }
 
-                if (choice == 2) {
-                    System.out.println("The computer chose paper!");
+                else if (choice == 2) {
                     System.out.println("Scissors beats paper. You win!");
                     wins = wins + 1;
-                }
-
-                if (choice == 0) {
-                    System.out.println("The computer chose paper!");
+                } else {
                     System.out.println("Paper beats rock. You lose!");
                     losses = losses + 1;
                 }
             }
 
-            if (compchoice == 2) {
+            else {
+                System.out.println("The computer chose scissors!");
                 if (choice == 1) {
-                    System.out.println("The computer chose scissors!");
+
                     System.out.println("Scissors beats paper. You lose!");
                     losses = losses + 1;
                 }
 
-                if (choice == 2) {
-                    System.out.println("The computer chose scissors!");
+                else if (choice == 2) {
+
                     System.out.println("This is a tie!");
                     ties = ties + 1;
-                }
+                } else {
 
-                if (choice == 0) {
-                    System.out.println("The computer chose scissors!");
                     System.out.println("Rock beats scissors. You win!");
                     wins = wins + 1;
                 }
             }
-            
-            System.out.println("\nYou have played " +gamesplayed + " games played");
-            System.out.println("You have " +wins + " wins");
-            System.out.println("You have " +losses + " losses");
-            System.out.println("You have " +ties + " ties");
-            
+
+            System.out.println("\nYou have played " + gamesplayed + " game(s) ");
+            System.out.println("You have " + wins + " wins");
+            System.out.println("You have " + losses + " losses");
+            System.out.println("You have " + ties + " ties");
+
             System.out.println("\nDo you want to play again?\n"
                     + "Enter y to play again.");
 
-            String y = input.nextLine();
-            if (y.equals("y")) {
-                playagain = true;
-            }
-            else { playagain = false;
-            }
+            playagain = input.nextLine().equals("y");
 
         } while (playagain);
 

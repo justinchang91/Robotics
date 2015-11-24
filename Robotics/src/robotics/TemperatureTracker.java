@@ -19,7 +19,7 @@ public class TemperatureTracker {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        System.out.println("Please display temperatures below. ");
+        System.out.println("Please display this week's temperatures below. ");
 
         String[] Days = new String[7];
         Days[0] = "Monday";

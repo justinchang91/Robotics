@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author GWS_STUDENT
  */
-public class SwitchStatementAndStringTaskVowelCounter {
+public class VowelCounter {
 
     /**
      * @param args the command line arguments
@@ -17,7 +17,8 @@ public class SwitchStatementAndStringTaskVowelCounter {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        
+       
+       System.out.println("Welcome to vowel counter!");
        System.out.println("Write a word, and I will print it ");
        //This asks the user for a word
        
@@ -47,7 +48,7 @@ public class SwitchStatementAndStringTaskVowelCounter {
           }
        }
        
-       System.out.println("Number of vowels " + vowels);
+       System.out.println("Number of vowels: " + vowels);
        
                
                  
