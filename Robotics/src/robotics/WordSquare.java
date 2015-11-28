@@ -18,7 +18,7 @@ public class WordSquare {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+        System.out.println("Please enter a word: "); 
         Scanner userInput = new Scanner(System.in);
 
         String word = userInput.nextLine();
