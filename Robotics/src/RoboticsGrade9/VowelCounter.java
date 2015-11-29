@@ -19,12 +19,10 @@ public class VowelCounter {
         Scanner input = new Scanner(System.in);
        
        System.out.println("Welcome to vowel counter!");
-       System.out.println("Write a word, and I will print it ");
+       System.out.println("Enter a word and I will count it's number of vowels ");
        //This asks the user for a word
        
        int vowels = 0;
-       //the amount of vowels that will be added
-       
        int length;
        
        String word = input.nextLine();
