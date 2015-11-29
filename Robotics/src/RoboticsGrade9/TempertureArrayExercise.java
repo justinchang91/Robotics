@@ -10,7 +10,7 @@
  the array, [2] would be the third and so on.  
 
  */
-package robotics;
+package RoboticsGrade9;
 
 import java.util.Scanner;
 
