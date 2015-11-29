@@ -20,102 +20,102 @@ public class MagicEightBall {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
 
-        int randomNumber;
         String question;
-        boolean playagain;
+        int randomNumber;
         int questionsAsked = 0;
+        boolean playagain;
 
         System.out.println("Welcome to Magic 8 Ball!");
 
         playagain = true;
         do {
-            System.out.println("\nMagic 8 Ball: What is your question? ");
+            System.out.println("\nMAGIC 8 BALL: What is your question? ");
             question = input.nextLine();
 
             randomNumber = (int) (Math.random() * 21);
             switch (randomNumber) {
                 case 1:
-                    System.out.println("Magic 8 Ball: Signs point to yes.");
+                    System.out.println("MAGIC 8 BALL: Signs point to yes.");
                     break;
 
                 case 2:
-                    System.out.println("Magic 8 Ball: Yes.");
+                    System.out.println("MAGIC 8 BALL: Yes.");
                     break;
 
                 case 3:
-                    System.out.println("Magic 8 Ball: Reply hazy, try again.");
+                    System.out.println("MAGIC 8 BALL: Reply hazy, try again.");
                     break;
 
                 case 4:
-                    System.out.println("Magic 8 Ball: Without a doubt.");
+                    System.out.println("MAGIC 8 BALL: Without a doubt.");
                     break;
 
                 case 5:
-                    System.out.println("Magic 8 Ball: My sources say no.");
+                    System.out.println("MAGIC 8 BALL: My sources say no.");
                     break;
 
                 case 6:
-                    System.out.println("Magic 8 Ball: As I see it,yes.");
+                    System.out.println("MAGIC 8 BALL: As I see it,yes.");
                     break;
 
                 case 7:
-                    System.out.println("Magic 8 Ball: You may rely on it.");
+                    System.out.println("MAGIC 8 BALL: You may rely on it.");
                     break;
 
                 case 8:
-                    System.out.println("Magic 8 Ball: Concentrate and ask again.");
+                    System.out.println("MAGIC 8 BALL: Concentrate and ask again.");
                     break;
 
                 case 9:
-                    System.out.println("Magic 8 Ball: Outlook not so good.");
+                    System.out.println("MAGIC 8 BALL: Outlook not so good.");
                     break;
 
                 case 10:
-                    System.out.println("Magic 8 Ball: It is decidedly so.");
+                    System.out.println("MAGIC 8 BALL: It is decidedly so.");
                     break;
 
                 case 11:
-                    System.out.println("Magic 8 Ball: Better not tell you now.");
+                    System.out.println("MAGIC 8 BALL: Better not tell you now.");
                     break;
 
                 case 12:
-                    System.out.println("Magic 8 Ball: Very doubtful.");
+                    System.out.println("MAGIC 8 BALL: Very doubtful.");
                     break;
 
                 case 13:
-                    System.out.println("Magic 8 Ball: Yes - definitely.");
+                    System.out.println("MAGIC 8 BALL: Yes - definitely.");
                     break;
 
                 case 14:
-                    System.out.println("Magic 8 Ball: It is certain.");
+                    System.out.println("MAGIC 8 BALL: It is certain.");
                     break;
 
                 case 15:
-                    System.out.println("Magic 8 Ball: Cannot predict now.");
+                    System.out.println("MAGIC 8 BALL: Cannot predict now.");
                     break;
 
                 case 16:
-                    System.out.println("Magic 8 Ball: Most likely.");
+                    System.out.println("MAGIC 8 BALL: Most likely.");
                     break;
 
                 case 17:
-                    System.out.println("Magic 8 Ball: Ask me again later.");
+                    System.out.println("MAGIC 8 BALL: Ask me again later.");
                     break;
 
                 case 18:
-                    System.out.println("Magic 8 Ball: My reply is no.");
+                    System.out.println("MAGIC 8 BALL: My reply is no.");
                     break;
 
                 case 19:
-                    System.out.println("Magic 8 Ball: Outlook good.");
+                    System.out.println("MAGIC 8 BALL: Outlook good.");
                     break;
 
                 case 20:
-                    System.out.println("Magic 8 Ball: Don't count on it.");
+                    System.out.println("MAGIC 8 BALL: Don't count on it.");
                     break;
 
                 default:
-                    System.out.print("Magic 8 Ball: You think you've got problems?");
+                    System.out.print("MAGIC 8 BALL: You think you've got problems?");
                     System.out.println(" My random number generator is broken!");
 
             }
