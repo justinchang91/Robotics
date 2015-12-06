@@ -31,7 +31,7 @@ public class RockPaperScissors {
         int losses = 0;
         int ties = 0;
 
-        playagain = true;
+        
         do {
             System.out.println("Please select Rock, Paper or Scissors");
             gamesplayed = gamesplayed + 1;

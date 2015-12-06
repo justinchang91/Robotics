@@ -27,7 +27,7 @@ public class MagicEightBall {
 
         System.out.println("Welcome to Magic 8 Ball!");
 
-        playagain = true;
+        
         do {
             System.out.println("\nMAGIC 8 BALL: What is your question? ");
             question = input.nextLine();
