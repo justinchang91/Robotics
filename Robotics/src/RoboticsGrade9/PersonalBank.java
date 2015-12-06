@@ -30,7 +30,6 @@ public class PersonalBank {
         System.out.println("Welcome to your personal bank account.");
         System.out.println("\nWould you like to deposit or withdraw? ");
 
-        
         do {
             System.out.println("Enter d to deposit / w to withdraw");
 
