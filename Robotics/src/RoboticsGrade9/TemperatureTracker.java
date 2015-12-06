@@ -19,7 +19,7 @@ public class TemperatureTracker {
     public static void main(String[] args) {
         // TODO code application logic here
     Scanner userInput = new Scanner(System.in);
-        int[] aryNums = new int[7];
+        
         int max = 0;
         int sum = 0;
         int average;
