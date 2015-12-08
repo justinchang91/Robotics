@@ -44,7 +44,7 @@ public class TemperatureTracker {
             Temp[i] = userInput.nextInt();
             }
 
-        
+       
         System.out.println("\nThis is the weekly forcast: ");
         for (int i = 0; i < Days.length; i++) {
             System.out.println( Days[i] +": "+ Temp[i]);
