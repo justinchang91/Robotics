@@ -16,14 +16,15 @@ public class Methods {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    
-        int newVar = anything();
+    int methodVariable = 20;
+        int newVar = anything(methodVariable);
    
         
     System.out.println(newVar);
     }
-    public static int anything (){
-        int oldVar = 1;
+    public static int anything(int methodVariable){
+        int oldVar = 1+methodVariable;
+        
         return oldVar;
     }
     
