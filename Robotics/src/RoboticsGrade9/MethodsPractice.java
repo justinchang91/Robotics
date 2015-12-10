@@ -19,14 +19,14 @@ public class MethodsPractice {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        System.out.println("Please enter 1 or 2");
+        
         int randomNumber = generateRandomNumber();
-        int guess = getUserGuess();
-        boolean playagain;
+        int guess;
+        boolean playAgain = false;
 
         do {
-            
-            guess = getUserGuess();
+           System.out.println("Please enter 1 or 2");
+           guess = getUserGuess();
             switch (randomNumber) {
                 case 1:
                     System.out.println("The computer chose 1");
@@ -45,19 +45,14 @@ public class MethodsPractice {
                         System.out.println("You guessed correct!");
                     } else {
                         System.out.println("You guessed wrong");
-
                     }
-
                     break;
-
             }
-
-            
             String y = playAgain();
-            if (playAgain().equals("y"));
-            playagain = true;
-
-        } while (playagain);
+            if (y.equals("y")){
+            playAgain = true;
+            }
+        } while (playAgain);
 
     }
 
