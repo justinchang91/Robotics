@@ -19,19 +19,28 @@ public class TenSticks {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        boolean userGoFirst = false;
+        boolean userGoFirst = false ;
         int amountUserTakes;
         int totalSticks = 10;
+        int randomNumber = generateRandomNumber();
+        int amountComputerTakes =0 ;
+
         System.out.println("Welcome to 10!");
 
+       
+        while (totalSticks > 0) {
         //Asks user if they want to go first
         String f = goFirst();
         if (f.equals("f")) {
             userGoFirst = true;
-        } else {
+        } 
+        else {
+            
             System.out.println("Alright, computer goes first!");
+            
         }
-
+        
+        while (totalSticks > 0) {
         //what to do if user chooses to go first
         if (userGoFirst = true) {
             amountUserTakes = sticksToTake();
@@ -40,17 +49,39 @@ public class TenSticks {
                 case 1:
                     if (amountUserTakes == 1) {
                         totalSticks = totalSticks - 1;
-                        System.out.println("There are" + totalSticks + "left");
+                        System.out.println("There are " + totalSticks + " sticks left.");
                     }
-            
-                case 2:
-            
+
+                default:
+                    if (amountUserTakes == 2) {
+                        totalSticks = totalSticks - 2;
+                        System.out.println("There are " + totalSticks + " sticks left.");
+                    }
             }
 
+        } //what to do if user chooses to go second
+        else {
+
+            switch (randomNumber) {
+                case 1:
+                    if (amountComputerTakes == 1) { 
+                        totalSticks = totalSticks - 1;
+                        System.out.println("There are " + totalSticks + " sticks left.");
+                    }
+
+                default:
+                    if (amountComputerTakes == 2) {
+                        totalSticks = totalSticks - 2;
+                        System.out.println("There are " + totalSticks + " sticks left.");
+                    }
+            }
+
+        
         }
-
     }
-
+    }
+    }
+  
     public static String goFirst() {
         Scanner input = new Scanner(System.in);
         System.out.println("\nDo you want to go first?\n"
@@ -67,4 +98,9 @@ public class TenSticks {
 
     }
 
+    public static int generateRandomNumber() {
+        return (int) (Math.random() * 2);
+    }
+
+    
 }
