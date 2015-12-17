@@ -40,7 +40,7 @@ public class TenSticks {
                 case 1:
                     if (amountUserTakes == 1) {
                         totalSticks = totalSticks - 1;
-
+                        System.out.println("There are" + totalSticks + "left");
                     }
             
                 case 2:
