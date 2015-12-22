@@ -20,9 +20,9 @@ public class TenSticks {
         // TODO code application logic here
 
         System.out.println("Welcome to 10 sticks!");
-        System.out.print("You and the computer take turns picking sticks");
+        System.out.print("Instructions: You and the computer take turns picking sticks");
         System.out.println("and whoever gets to 0 sticks first loses!");
-        //if user goes first
+        
         String y = goFirst();
 
         if (y.equals("y")) {
