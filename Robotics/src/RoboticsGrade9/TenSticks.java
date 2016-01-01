@@ -21,7 +21,7 @@ public class TenSticks {
 
         System.out.println("Welcome to 10 sticks!");
         System.out.print("Instructions: You and the computer take turns picking sticks");
-        System.out.println("and whoever gets to 0 sticks first loses!");
+        System.out.println(" and whoever gets to 0 sticks first loses!");
         
         String y = goFirst();
 
