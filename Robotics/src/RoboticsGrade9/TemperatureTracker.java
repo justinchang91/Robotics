@@ -38,7 +38,7 @@ public class TemperatureTracker {
         
         int[] Temp = new int[7];
         
-       
+       //to collect user data
         for (int i = 0; i < Temp.length; i++) {
             
             Temp[i] = userInput.nextInt();
