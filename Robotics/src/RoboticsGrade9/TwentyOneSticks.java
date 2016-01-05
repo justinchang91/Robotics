@@ -72,16 +72,15 @@ public class TwentyOneSticks {
 
                 } else {
                     int randomChoice;
-                    randomChoice = (int) (Math.random() * 2);;
+                    randomChoice = (int) (Math.random() * 2);
                     switch (randomChoice) {
                         case 1:
                             sticks = 1;
                             break;
-                         
-                        default: 
+
+                        default:
                             sticks = 2;
-                          
-                           
+
                     }
 
                 }
@@ -109,16 +108,16 @@ public class TwentyOneSticks {
 
             } else {
                 int randomChoice;
-                    randomChoice = (int) (Math.random() * 2);;
-                    switch (randomChoice) {
-                        case 1:
-                            sticks = 1;
-                            break;
-                         
-                        default: 
-                            sticks = 2;
-            }
+                randomChoice = (int) (Math.random() * 2);
+                switch (randomChoice) {
+                    case 1:
+                        sticks = 1;
+                        break;
 
+                    default:
+                        sticks = 2;
+                }
+            }
             System.out.println("COMPUTER'S TURN: The computer takes " + sticks + " sticks.");
             totalSticks = totalSticks - sticks;
 
@@ -147,5 +146,6 @@ public class TwentyOneSticks {
 
             }
         } while (totalSticks > 0);
+
     }
 }
