@@ -22,7 +22,7 @@ public class TwentyOneSticks {
         System.out.println("Welcome to 21 sticks!");
         System.out.print("Instructions: You and the computer take turns picking sticks");
         System.out.println(" and whoever gets to 0 sticks first loses!");
-        
+
         String y = goFirst();
 
         if (y.equals("y")) {
@@ -52,18 +52,18 @@ public class TwentyOneSticks {
             System.out.println("YOUR TURN: How many sticks to take? (1 or 2)");
             int sticks = input.nextInt();
 
-            if (sticks < 1 ) {
-                    sticks = 1;
-                }
-                
-                if (sticks > 2 ) {
-                    sticks = 2;
-                }
+            if (sticks < 1) {
+                sticks = 1;
+            }
+
+            if (sticks > 2) {
+                sticks = 2;
+            }
             totalSticks = totalSticks - sticks;
 
             if (totalSticks <= 0) {
                 System.out.println("You lose!");
-                
+
                 //computer turn
             } else {
                 System.out.println("There are " + totalSticks + " sticks.");
@@ -71,10 +71,21 @@ public class TwentyOneSticks {
                     sticks = 1;
 
                 } else {
-                    sticks = 2;
+                    int randomChoice;
+                    randomChoice = (int) (Math.random() * 2);;
+                    switch (randomChoice) {
+                        case 1:
+                            sticks = 1;
+                            break;
+                         
+                        default: 
+                            sticks = 2;
+                          
+                           
+                    }
+
                 }
-                
-                
+
                 System.out.println("COMPUTER'S TURN: The computer takes " + sticks + " sticks.");
                 totalSticks = totalSticks - sticks;
 
@@ -97,7 +108,15 @@ public class TwentyOneSticks {
                 sticks = 1;
 
             } else {
-                sticks = 2;
+                int randomChoice;
+                    randomChoice = (int) (Math.random() * 2);;
+                    switch (randomChoice) {
+                        case 1:
+                            sticks = 1;
+                            break;
+                         
+                        default: 
+                            sticks = 2;
             }
 
             System.out.println("COMPUTER'S TURN: The computer takes " + sticks + " sticks.");
@@ -112,11 +131,11 @@ public class TwentyOneSticks {
 
                 System.out.println("YOUR TURN: How many sticks to take? (1 or 2)");
                 sticks = input.nextInt();
-                 if (sticks < 1 ) {
+                if (sticks < 1) {
                     sticks = 1;
                 }
-                
-                if (sticks > 2 ) {
+
+                if (sticks > 2) {
                     sticks = 2;
                 }
                 totalSticks = totalSticks - sticks;
