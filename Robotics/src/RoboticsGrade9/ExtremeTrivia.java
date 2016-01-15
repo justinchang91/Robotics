@@ -1,6 +1,5 @@
 package RoboticsGrade9;
 
-
 import java.util.Scanner;
 
 /*
@@ -22,68 +21,59 @@ public class ExtremeTrivia {
 
         System.out.println("Welcome to Extreme Trivia!");
         whatIsYourQuestion();
+
     }
 
     public static void whatIsYourQuestion() {
         Scanner input = new Scanner(System.in);
-        boolean anotherQuestion;
-        int questionsAsked = 0;
+
         String question;
-         
-        //user creates question
-        
-       
+        String wrongAnswerOne;
+        String wrongAnswerTwo;
+        String wrongAnswerThree;
+        String rightAnswer;
+        Boolean playAgain = false;
+
         do {
-        System.out.println("What is your question?");
-        question = input.nextLine();
-        questionsAsked = questionsAsked + 1;
-        System.out.println("What are the answers? (4) ");
-        
-       
-        String[] answers = new String[4];
-        answers[0] = input.nextLine();
-        answers[1] = input.nextLine();
-        answers[2] = input.nextLine();
-        answers[3] = input.nextLine(); 
+            //user creates question
+            System.out.println("What is your question?");
+            question = input.nextLine();
 
-        
-        System.out.println("\nYou have created " + questionsAsked + " question(s) ");
-        
-        System.out.println("Another question? (y/n)");
-            String y = input.nextLine();
+            System.out.println("What is the right answer?");
 
-            if (y.equals("y")) {
-                anotherQuestion = true;
+            rightAnswer = input.nextLine();
+
+            System.out.println("What are the wrong answers?");
+            wrongAnswerOne = input.nextLine();
+            wrongAnswerTwo = input.nextLine();
+            wrongAnswerThree = input.nextLine();
+
+            //user answers
+            System.out.println("\n" + question);
+
+            System.out.println("\n1. " + wrongAnswerOne);
+            System.out.println("2. " + wrongAnswerTwo);
+            System.out.println("3. " + rightAnswer);
+            System.out.println("4. " + wrongAnswerThree);
+
+            System.out.println("\nWhat is your answer?");
+
+            String userChoice = input.nextLine();
+
+            if (userChoice.equals(rightAnswer)) {
+                System.out.println("You guessed right!");
             } else {
-                anotherQuestion = false;
+                System.out.println("You guessed wrong!");
             }
-        } while (anotherQuestion);
-        
-        
-     //user answers
-    System.out.println(question);
-    
-    
-        
-    
-  
 
-    
-       
+            System.out.println("Play again? (y/n)");
+            String y = input.nextLine();
+            if (y.equals("y")) {
+                playAgain = true;
+            } else {
+                playAgain = false;
+            }
+        } while (playAgain);
+
     }
-
-public static void gatherAnswers() {
-   Scanner input = new Scanner(System.in);
-    String[] answers = new String[4];
-        answers[0] = input.nextLine();
-        answers[1] = input.nextLine();
-        answers[2] = input.nextLine();
-        answers[3] = input.nextLine(); 
-
-        
-        
 }
-
-
-}
-
