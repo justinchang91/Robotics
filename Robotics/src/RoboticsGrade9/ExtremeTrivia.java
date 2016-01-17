@@ -38,16 +38,16 @@ public class ExtremeTrivia {
         do {
             //user creates question
             System.out.println("What is your question?");
-            question = input.nextLine().toLowerCase();;
+            question = input.nextLine().toLowerCase();
 
             System.out.println("What is the right answer?");
 
-            rightAnswer = input.nextLine().toLowerCase();;
+            rightAnswer = input.nextLine().toLowerCase();
 
             System.out.println("What are the wrong answers? (3)");
-            wrongAnswerOne = input.nextLine().toLowerCase();;
-            wrongAnswerTwo = input.nextLine().toLowerCase();;
-            wrongAnswerThree = input.nextLine().toLowerCase();;
+            wrongAnswerOne = input.nextLine().toLowerCase();
+            wrongAnswerTwo = input.nextLine().toLowerCase();
+            wrongAnswerThree = input.nextLine().toLowerCase();
 
             //user answers
             System.out.println("\n" + question);
