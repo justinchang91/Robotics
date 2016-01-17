@@ -33,29 +33,57 @@ public class ExtremeTrivia {
         String wrongAnswerThree;
         String rightAnswer;
         Boolean playAgain = false;
+        int randomNumber;
 
         do {
             //user creates question
             System.out.println("What is your question?");
-            question = input.nextLine();
+            question = input.nextLine().toLowerCase();;
 
             System.out.println("What is the right answer?");
 
-            rightAnswer = input.nextLine();
+            rightAnswer = input.nextLine().toLowerCase();;
 
-            System.out.println("What are the wrong answers?");
-            wrongAnswerOne = input.nextLine();
-            wrongAnswerTwo = input.nextLine();
-            wrongAnswerThree = input.nextLine();
+            System.out.println("What are the wrong answers? (3)");
+            wrongAnswerOne = input.nextLine().toLowerCase();;
+            wrongAnswerTwo = input.nextLine().toLowerCase();;
+            wrongAnswerThree = input.nextLine().toLowerCase();;
 
             //user answers
             System.out.println("\n" + question);
 
-            System.out.println("\n1. " + wrongAnswerOne);
-            System.out.println("2. " + wrongAnswerTwo);
-            System.out.println("3. " + rightAnswer);
-            System.out.println("4. " + wrongAnswerThree);
+            randomNumber = (int) (Math.random() * 4);
 
+            switch (randomNumber) {
+
+                case 1:
+                    System.out.println("\n1. " + wrongAnswerOne);
+                    System.out.println("2. " + wrongAnswerTwo);
+                    System.out.println("3. " + rightAnswer);
+                    System.out.println("4. " + wrongAnswerThree);
+                    break;
+
+                case 2:
+                    System.out.println("\n1. " + rightAnswer);
+                    System.out.println("2. " + wrongAnswerTwo);
+                    System.out.println("3. " + wrongAnswerOne);
+                    System.out.println("4. " + wrongAnswerThree);
+                    break;
+
+                case 3:
+                    System.out.println("\n1. " + wrongAnswerOne);
+                    System.out.println("2. " + rightAnswer);
+                    System.out.println("3. " + wrongAnswerTwo);
+                    System.out.println("4. " + wrongAnswerThree);
+                    break;
+
+                default:
+                    System.out.println("\n1. " + wrongAnswerOne);
+                    System.out.println("2. " + wrongAnswerTwo);
+                    System.out.println("3. " + wrongAnswerThree);
+                    System.out.println("4. " + rightAnswer);
+
+            }
             System.out.println("\nWhat is your answer?");
 
             String userChoice = input.nextLine();
