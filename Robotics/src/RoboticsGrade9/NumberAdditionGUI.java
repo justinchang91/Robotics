@@ -63,6 +63,7 @@ public class NumberAdditionGUI extends javax.swing.JFrame {
             }
         });
 
+        resultText.setEditable(false);
         resultText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resultTextActionPerformed(evt);
